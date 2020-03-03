@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>👀 KNOCK YOUR BRAIN</title>
     <link href="https://fonts.googleapis.com/css?family=Gugi|Kirang+Haerang|Nanum+Gothic|Poor+Story&display=swap" rel="stylesheet">
 
@@ -11,13 +9,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
     <meta http-equiv="imagetoolbar" content="no">
     <style type="text/css">
-.header{ background: url(../img/bg.jpg) no-repeat 100% 100%}
-      
+
+    .header{ background: url(../img/bg.jpg) no-repeat 100% 100%}
+
+
 @font-face { font-family: 'Arita-dotum-Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
 
+@@media (max-width) {.subtitle{font-size: 12px;}
+
+}
+
 
     * {margin:0; }
+
+
 
 
       .containter {
@@ -31,17 +37,9 @@
         display: flex;
         border-bottom: 1px solid gray;
         align-items: center;
-      }
-
-
-      .nav-item {
-        margin: 10px;
-        border:1px solid black;
-        border-radius: 10px;
-        padding: 5px;
-        background-color: rgb(40, 40, 40);
 
       }
+
 
       .nav-left-items{
         display:flex;
@@ -51,12 +49,20 @@
 
       .nav-right-items{
         display:flex;
-        position:relative;
+        position: sticky;
         left:660px;
-
         margin:10px;
-      }
+        flex-shrink: 0;
 
+      }
+            .nav-item {
+              margin: 10px;
+              border:1px solid black;
+              border-radius: 10px;
+              padding: 5px;
+              background-color: rgb(40, 40, 40);
+
+            }
 
 
       .title {
